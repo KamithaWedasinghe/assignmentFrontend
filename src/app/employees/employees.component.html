@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Employee Name</th>
+            <th scope="col">Employee Email Address</th>
+            <th scope="col">Branch Name </th>
+            <th scope="col">Bank Name </th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let items of employeeList; let i = index">
+        <tr>
+            <th scope="row">{{i+1}}</th>   
+            <td>{{items.emp_name}}</td>
+            <td>{{items.emp_email}}</td>
+            <td>{{items.branch_name}}</td>
+            <td>{{items.bank_name}}</td>
+        </tr>
+    </tbody>
+</table>
